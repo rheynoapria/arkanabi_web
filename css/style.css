@@ -9577,7 +9577,7 @@ body.sidebar-open::before {
 }
 
 .features-overview .content-header {
-  padding: 78px 0px 48px 0px;
+  padding: 78px 0px 85px 0px;
   text-align: center;
 }
 
@@ -9599,7 +9599,7 @@ body.sidebar-open::before {
 }
 
 .features-overview .features-width {
-  flex-basis: 61%;
+  flex-basis: 85%;
 }
 
 @media (max-width: 767px) {
