@@ -4387,9 +4387,11 @@ input[type="button"].btn-block {
 }
 
 .card-img-top {
-  width: 100%;
+  width: 50%;
+  height: 50%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+  
 }
 
 .card-img-bottom {
