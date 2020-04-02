@@ -367,6 +367,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  color: #214467;
 }
 
 h1, .h1 {
@@ -7588,7 +7589,8 @@ button.bg-dark:focus {
 
 .qt-3,
 .qy-3 {
-  padding-top: 2rem !important;
+  padding-top: 3rem !important;
+  color: #4E3699;
 }
 
 .pr-3,
@@ -7604,6 +7606,7 @@ button.bg-dark:focus {
 .qb-3,
 .qy-3 {
   padding-bottom: 0rem !important;
+  color: #4E3699;
 }
 
 .pl-3,
@@ -9375,7 +9378,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6e6e6e !important;
+  color: #214467 !important;
 }
 
 .text-black-50 {
@@ -9581,14 +9584,21 @@ body.sidebar-open::before {
   /* background-color: #f7f8fa; */
   background: linear-gradient(176.44deg, rgba(151, 223, 255, 0.22) -21.36%, rgba(200, 238, 255, 0) 79.09%);
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .content-wrapper {
   padding: 27px 0px;
 }
 
+.bg-eclipse{
+  background-image: url('/images/bg_ourfeatures.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .features-overview .content-header {
-  padding: 78px 0px 85px 0px;
+  padding: 40px 0px 85px 0px;
   text-align: center;
 }
 
