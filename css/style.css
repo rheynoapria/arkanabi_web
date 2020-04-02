@@ -7585,6 +7585,11 @@ button.bg-dark:focus {
   padding-top: 1rem !important;
 }
 
+.qt-3,
+.qy-3 {
+  padding-top: 2rem !important;
+}
+
 .pr-3,
 .px-3 {
   padding-right: 1rem !important;
@@ -7593,6 +7598,11 @@ button.bg-dark:focus {
 .pb-3,
 .py-3 {
   padding-bottom: 1rem !important;
+}
+
+.qb-3,
+.qy-3 {
+  padding-bottom: 0rem !important;
 }
 
 .pl-3,
@@ -9614,9 +9624,23 @@ body.sidebar-open::before {
   transition: all 0.4s ease-in-out;
 }
 
+
+
 .features-overview .img-icons:hover {
   transform: scale(1.1);
 }
+
+.features-overview .img-iconss {
+
+  height:180px;
+  transition: all 0.4s ease-in-out;
+}
+
+.features-overview .img-iconss:hover {
+  transform: scale(1.1);
+}
+
+
 
 @media (max-width: 992px) {
   .digital-marketing-service .flex-item:nth-of-type(1) {
