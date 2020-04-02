@@ -17,10 +17,9 @@ function scrollFunction() {
 // OWL-CAROUSAL
 $('.owl-carousel').owlCarousel({
     items: 3,
-    loop:true,
+    loop:false,
     nav:false,
-    dot:true,
-    autoplay: true,
+    autoplay: false,
     slideTransition: 'linear',
     autoplayHoverPause: true,
     responsive:{
@@ -80,3 +79,4 @@ AOS.init({
       $('#navbarSupportedContent').removeClass('show');
     }
   }
+  
