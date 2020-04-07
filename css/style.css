@@ -66,6 +66,7 @@ body {
   color: #214467;
   text-align: left;
   background-color: #fff;
+  overflow-x:hidden;
 }
 
 [tabindex="-1"]:focus {
@@ -9593,9 +9594,11 @@ body.sidebar-open::before {
 }
 
 .bg-eclipse{
-  background-image: url('/images/bg_ourfeatures.svg');
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI0OTYiIHZpZXdCb3g9IjAgMCAxNDQwIDQ5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03MjQuMzQzIDQ5NS4yN0MyMjcuMzM0IDQ5Ni4wNDQgLTI3MC45OTQgMTMwLjQxNiAtMzk4LjY1NCAyOS44Mzk0Qy00MDkuNjA2IDIxLjIxMDkgLTQwMy4xOTUgNC40NjI3NyAtMzg5LjI1MyA0LjQ0MTA3TDE4NTIuNTUgMC45NTIzNjJDMTg2Ni41MyAwLjkzMDYwMyAxODcyLjk3IDE3Ljc0NDcgMTg2MS45NiAyNi4zNjcyQzE3MzIuODggMTI3LjQwOSAxMjI5LjI3IDQ5NC40ODUgNzI0LjM0MyA0OTUuMjdaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXIpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSIxODQ3IiB5MT0iNzM2LjY5IiB4Mj0iMTg2NS42MSIgeTI9IjAuMDU2NjQ1NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMTBBOEVGIiBzdG9wLW9wYWNpdHk9IjAuMzEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkJGQ0ZEIiBzdG9wLW9wYWNpdHk9IjAiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K');
   background-repeat: no-repeat;
   background-position: bottom;
+
+
 }
 
 .features-overview .content-header {
@@ -9812,6 +9815,7 @@ footer a:hover {
 
 .owl-theme .owl-dots .owl-dot {
   outline: none;
+  display : none;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -9828,7 +9832,7 @@ footer a:hover {
   opacity: 0.7;
 }
 
-.owl-theme .owl-dots .owl-dot.active span {
+.owl-theme .owl-dots .owl-dotctive span {
   background-color: transparent;
   border-color: #ff0000;
   -webkit-transform: scale(0.9);
@@ -9845,11 +9849,15 @@ footer a:hover {
 }
 
 .owl-item:nth-child(odd) .content-divider {
-  background-color: black;
+  background-color: blaFck;
 }
 
 .owl-item:nth-child(even) .content-divider {
   background-color: red;
+}
+
+.item{
+  
 }
 
 @media (max-width: 575px) {
@@ -10350,4 +10358,13 @@ footer a:hover {
   border: none;
   justify-content: flex-start;
   padding: 5px 0px 20px 39px;
+}
+
+
+#services{
+  background-image: url(/images/bg_product.svg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
