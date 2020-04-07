@@ -167,12 +167,12 @@ a:hover {
 }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
+  color: #448FFF;
   text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
@@ -2501,14 +2501,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #000637;
-  border-color: #000637;
+  color: #448FFF;
+  border-color: #448FFF;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #000637;
-  border-color: #000637;
+  background-color: #448FFF;
+  border-color: #448FFF;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -10313,15 +10313,15 @@ footer a:hover {
 }
 
 .btn-outline-primary {
-  color: #000637;
+  color: #448FFF;
   background-color: white;
-  border: 2px solid #000637;
+  border: 2px solid #448FFF;
   transition: all 0.5s ease-in-out;
 }
 
 .btn-outline-primary:hover {
   color: white;
-  background-color: #000637;
+  background-color: #448FFF;
 }
 
 .btn-outline-secondary {
