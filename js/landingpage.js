@@ -45,7 +45,7 @@ $(document).ready(function() {
       }, {
           duration: 1000,
       });
-      $('body').scrollspy({ target: '.navbar',offset: $(t).offset().top });
+      // $('body').scrollspy({ target: '.navbar',offset: $(t).offset().top });
       return false;
   });
 

@@ -3845,11 +3845,26 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
 }
 
+.nav-linkk {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
 }
 
+.nav-linkk:hover, .nav-linkk:focus {
+  text-decoration: none;
+}
+
 .nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.nav-linkk.disabled {
   color: #6c757d;
   pointer-events: none;
   cursor: default;
@@ -3869,11 +3884,27 @@ input[type="button"].btn-block {
   border-top-right-radius: 0.25rem;
 }
 
+.nav-tabs .nav-linkk {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
 
+.nav-tabs .nav-linkk:hover, .nav-tabs .nav-linkk:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+
 .nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.nav-tabs .nav-linkk.disabled {
   color: #6c757d;
   background-color: transparent;
   border-color: transparent;
@@ -3886,6 +3917,15 @@ input[type="button"].btn-block {
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
+.nav-tabs .nav-linkk.active,
+.nav-tabs .nav-item.show .nav-linkk {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+
+
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-left-radius: 0;
@@ -3896,8 +3936,18 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
+.nav-pills .nav-linkk {
+  border-radius: 0.25rem;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #000637;
+}
+
+.nav-pills .nav-linkk.active,
+.nav-pills .show > .nav-linkk {
   color: #fff;
   background-color: #000637;
 }
@@ -9599,9 +9649,66 @@ body.sidebar-open::before {
 
 }
 
+
+.project-tab {
+    padding: 10%;
+    margin-top: 60px;
+}
+.project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-linkk, .nav-tabs .nav-linkk.active {
+    color: white;
+    font-family: Rubik;
+    background-color: #13A7F0;
+    border-color: transparent transparent #e9e0e0;
+    border-bottom: 4px solid #0c73e2;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: semi-bold;
+}
+.project-tab .nav-linkk {
+    font-family: Rubik;
+    border: 1px solid transparent;
+    background-color: #FAFAFA;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-radius: 10px;
+    color: #24282c;
+    font-size: 16px;
+    font-weight: 200;
+}
+.project-tab .nav-linkk:hover {
+    border: none;
+}
+.project-tab thead{
+    background: #f3f3f3;
+    color: #333;
+}
+.project-tab a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+
 .features-overview .content-header {
   padding: 40px 0px 85px 0px;
   text-align: center;
+}
+
+.features-overview .content-header-2 {
+  padding: 40px 0px 50px 0px;
+  text-align: center;
+}
+
+.text-product{
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 @media (max-width: 992px) {
