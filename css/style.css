@@ -9722,9 +9722,16 @@ body.sidebar-open::before {
 }
 
 
+
+.features-overview{
+  margin-bottom: -80px;
+  justify-content: center;
+}
 .features-overview .content-header {
   padding: 40px 0px 85px 0px;
   text-align: center;
+  position: relative;
+  justify-content: center;
 }
 
 .features-overview .content-header-2 {
@@ -10070,6 +10077,7 @@ footer a:hover {
 
 .grid-margin {
   margin-bottom: 100px;
+  margin-left: 20px;
 }
 
 @media (max-width: 992px) {
