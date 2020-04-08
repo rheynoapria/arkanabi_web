@@ -6273,6 +6273,10 @@ button.bg-dark:focus {
   background-color: #fff !important;
 }
 
+.bg-softwhite {
+  background-color: rgb(255, 255, 255) !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -9695,6 +9699,18 @@ body.sidebar-open::before {
 
   /* end get started */
 
+  /* start footer */
+  .bg-footer{
+    background-image: url(/images/bg_footer.png);
+    color: #FFFFFF;
+    margin-top: 100px;
+  }
+
+  .bg-footer .h5{
+    color: #FFFFFF
+  }
+  /* end footer */
+
 .project-tab {
     padding: 0.5% 10% 0% 10%;
     margin-top: 60px;
@@ -9932,11 +9948,11 @@ body.sidebar-open::before {
 }
 
 footer a {
-  color: #ff0000;
+  color: #ffffff;
 }
 
 footer a:hover {
-  color: black;
+  color: rgba(255, 255, 255, 0.959);
 }
 
 .section-subtitle, .customer-designation {
