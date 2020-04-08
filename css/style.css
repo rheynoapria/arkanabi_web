@@ -9651,7 +9651,7 @@ body.sidebar-open::before {
 
 
 .project-tab {
-    padding: 10%;
+    padding: 0.5% 10% 10% 10%;
     margin-top: 60px;
 }
 .project-tab #tabs{
