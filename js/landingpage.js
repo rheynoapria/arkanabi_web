@@ -45,17 +45,17 @@ $(document).ready(function() {
       }, {
           duration: 1000,
       });
-      $('body').scrollspy({ target: '.navbar',offset: $(t).offset().top });
+      // $('body').scrollspy({ target: '.navbar',offset: $(t).offset().top });
       return false;
   });
-
+  
 });
 
 // AOS
 AOS.init({
     offset: 120, 
-    delay: 0,
-    duration: 1200, 
+    delay: 200,
+    duration: 2400, 
     easing: 'ease', 
     once: true, 
     mirror: false, 
@@ -80,3 +80,16 @@ AOS.init({
       $('#navbarSupportedContent').removeClass('show');
     }
   }
+
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+   
+  });
+  $('.nav-tabs a').on('hidden.bs.tab', function(){
+    $('.dashboard-title , .dashboard-summary, .dashboard-btn ').transition({ x: -40, duration: 0 });
+    $('.dashboard-img').transition({ x: 40, duration: 0 });
+  });
+  $('.nav-tabs a').on('shown.bs.tab', function(e){
+    $('.dashboard-title , .dashboard-summary, .dashboard-btn ').transition({ x: 40, duration : 1000});
+    $('.dashboard-img').transition({ x: -40, duration: 1000 });
+  });
