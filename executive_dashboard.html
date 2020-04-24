@@ -93,8 +93,8 @@
         <div id="collapseOrganization" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Type of Dashboard:</h6>
-            <a class="collapse-item" href="pembangunan_daerah.html">Dashboard <br>Pemenangan Partai</a>
-            <a class="collapse-item" href="kesehatan_daerah.html">Dashboard <br>Persebaran</a>
+            <a class="collapse-item" href="pemenangan_dashboard.html">Dashboard <br>Pemenangan Partai</a>
+            <a class="collapse-item" href="dashboard_pesebaran.html">Dashboard <br>Persebaran</a>
           </div>
         </div>
       </li>
@@ -179,6 +179,32 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
+                  <div class='tableauPlaceholder' id='viz1586843329356' style='position: relative'>
+                    <script type="text/javascript"
+                        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+                    <script type="text/javascript">
+                        var viz;
+                
+                        function initViz() {
+                            var containerDiv = document.getElementById("vizContainer"),
+                                url = "https://public.tableau.com/views/SupplychainDashboard/1KPIDashboard?:display_count=y&mobile=&:origin=viz_share_link",
+                                options = {
+                                    hideTabs: true
+                                };
+                
+                            viz = new tableau.Viz(containerDiv, url, options);
+                        }
+                
+                       
+                    </script>
+                
+                
+                <body onload="initViz();">
+                  <div id="vizContainer" style="width:1050px; height:1161px; overflow:auto;"></div>
+                    <div id="controls" style="padding:20px;">
+                        
+                    </div>
+                </body>
                   <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
                   </div>
