@@ -131,13 +131,48 @@
             <div class="input-group">
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-p  rimary" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
             </div>
           </form>
-
+          <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#header-section">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_us">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Product
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="dashboard.html">Package Development</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="dashboard.html">ABI Services</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dashboard
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="kpi_dashboard.html">ABI for Business</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="pembangunan_daerah.html">ABI for Government</a>
+                  <div class="dropdown-divider"></div>  
+                  <a class="dropdown-item" href="pemenangan_dashboard.html">ABI for Organization</a>
+                </div>
+              </li>
+              <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+                <button class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+              </li>
+            </ul>
+          </div>
           <!-- Topbar Navbar -->
         </nav>
         <!-- End of Topbar -->
@@ -160,7 +195,7 @@
 
             <!-- Area Chart -->
             <div class="col-xl-12 col-lg-12">
-              <div class="card shadow mb-4">
+              <div class="card shadow mb-4" style=" height:80%">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Example Dashboard</h6>
@@ -179,6 +214,32 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
+                  <div class='tableauPlaceholder' id='viz1586843329356' style='position: relative'>
+                    <script type="text/javascript"
+                        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+                    <script type="text/javascript">
+                        var viz;
+                
+                        function initViz() {
+                            var containerDiv = document.getElementById("vizContainer"),
+                                url = "https://public.tableau.com/views/Accounts-Receivable/Dashboard1?:display_count=y&mobile=&:origin=viz_share_link",
+                                options = {
+                                    hideTabs: true
+                                };
+                
+                            viz = new tableau.Viz(containerDiv, url, options);
+                        }
+                
+                       
+                    </script>
+                
+                
+                <body onload="initViz();">
+                  <div id="vizContainer" style="width:100%; height:100%; overflow:auto;"></div>
+                    <div id="controls" style="padding:20px;">
+                        
+                    </div>
+                </body>
                   <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
                   </div>
