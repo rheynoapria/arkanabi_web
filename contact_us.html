@@ -11,11 +11,12 @@
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/aos/css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body id="body">
   <header id="header">
-    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
+    <nav class="navbar navbar-expand-lg pl-3 pl-sm-0 navbar-contactus" id="navbar">
       <div class="container ">
         <div class="navbar-brand-wrapper d-flex w-100">
           <img src="images/arkana_bi_transparan.png" alt="" style="width: 159px; height: 35px;">
@@ -60,14 +61,15 @@
                 Dashboard
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="kpi_dashboard.html">Arkana BI for Business</a>
+                <a class="dropdown-item" href="dasboard_page/kpi_dashboard.html">Arkana BI for Business</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="pembangunan_daerah.html">Arkana BI for Government</a>
+                <a class="dropdown-item" href="dashboard_page/pembangunan_daerah.html">Arkana BI for Government</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="pemenangan_dashboard.html">Arkana BI for Organization</a>
+                <a class="dropdown-item" href="dasboard_page/pemenangan_dashboard.html.html">Arkana BI for
+                  Organization</a>
               </div>
             </li>
-            <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+            <li class="nav-item btn-contact-us pl-4 pl-lg-0 ">
               <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
             </li>
           </ul>
@@ -77,16 +79,18 @@
   </header>
 
 
-  <div class="container">
+  <div class="container mt-5">
     <section id="tabs" class="features-overview">
       <div class="content-header" data-aos="fade-in">
         <h2>Contact Us</h2>Reach out to us for any inquiry
       </div>
-      <div class="pendaftaran">
-
-        <div class="content-page-body">
-          <div class="row">
+      
+        <div class="content-page-body " data-aos="fade-in">
+          <div class="row mb-5 pb-5">
             <div class="col-lg-6">
+              <div class="bg1"></div>
+              <div class="bg2"></div>
+              <div class="bg3"></div>
               <div class="form-group">
                 <input type="text" class="form-control" name="name" placeholder="Full Name" maxlength="35"
                   required=""><br>
@@ -94,28 +98,74 @@
                   required=""><br>
                 <input type="text" class="form-control" name="company" placeholder="Company" maxlength="30"
                   required=""><br>
-                <textarea class="form-control" rows="10" name="message" placeholder="Your Message"></textarea>
+                <textarea class="form-control" rows="7" name="message" placeholder="Your Message"></textarea>
 
               </div>
-              <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> Send Message</a>
+              <div class="col-lg-6">
+                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"> Send Message</a>
+              </div>
             </div>
-            </form>
+            <div class="col-lg-6">
+              <div class="form-group" data-aos="fade-in">
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.923407802222!2d106.83061481436229!3d-6.403869164412822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebe34d7e3a81%3A0x18ee279ea0f21a4e!2sArkana%20Solusi%20Digital%2C%20PT!5e0!3m2!1sen!2sid!4v1588090916998!5m2!1sen!2sid"
+                  width="550" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </div>
+            </div>
           </div>
+              <div class="container-fluid" data-aos="fade-in">
+              </div>
+            
 
-          <div class="container-fluid" data-aos="fade-in">
+              <div class="container justify-content-center">
+            <div class="row ml-5 pl-5" style="width: 100%">
+              <div class="col-lg-4 col-sm-12">
+                <img src="images/ic_location.png" alt="" class="" style="width: 80px;float: left;">
+                <div class="grid-margin d-flex ">
+                  <div class="features-width">
+                    <div class="text-muted">
+                      <h5 class="qy-4">Location:</h5>
+                      <p>Victoria Hills Business Park No 33 D,
+                        Depok Jawa Barat.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-lg-4 col-sm-12">
+                <img src="images/ic_email.svg" alt="" class="" style="width: 80px;float: left;">
+                <div class="grid-margin d-flex">
+                  <div class="features-width">
+                    <div class="text-muted">
+                      <h5 class="qy-4">Email:</h5>
+                      <p>info@arkana.co.id</p>
 
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-lg-4 col-sm-12">
+                <img src="images/ic_telephone.png" alt="" class="" style="width: 80px;float: left;">
+                <div class="grid-margin d-flex">
+                  <div class="features-width">
+                    <div class="text-muted">
+                      <h5 class="qy-4">Phone:</h5>
+                      <p></p>0856 - 5203 - 9639</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-        </div>
     </section>
   </div>
 
   <!-- start section product -->
   <section class="bg-product">
     <div class="container">
-
 
   </section>
   <!-- end section product -->
@@ -124,6 +174,7 @@
 
   <!-- End Get Started -->
   </div>
+
   <!-- Start Footer -->
   <footer class="bg-footer">
     <div class="container pt-5">
