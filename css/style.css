@@ -10564,3 +10564,22 @@ padding: 0 30px;
   padding: 10px 0px 10px 0px;
 
 }
+.bg11{
+  background: url('../images/bg_talktosales.svg')no-repeat ;
+  position: absolute;
+  width:1445px;
+  height: 506px;
+  left: -97px;
+  top:1390px;
+  padding: 0 30px;
+}
+.bg12{
+  background: url('../images/img_heroabiservices.svg')no-repeat ;
+  position: absolute;
+  width:780px;
+  height: 775px;
+  left: -97px;
+  top:-250px;
+  padding: 0 30px;
+}
+
