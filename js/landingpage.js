@@ -2,7 +2,7 @@
 window.onscroll = function() {scrollFunction()};
 var element = document.getElementById("body");
 function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       $(".navbar").addClass("fixed-top");
       element.classList.add("header-small");
       $("body").addClass("body-top-padding");

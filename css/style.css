@@ -66,7 +66,9 @@ body {
   color: #214467;
   text-align: left;
   background-color: #fff;
+  background-position: left;
 }
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -2230,8 +2232,20 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #000637;
-  border-color: #000637;
+  background-color: #4037be;
+  border-color: #4037be;
+}
+
+.btn-primary::hover {
+  color: #fff;
+  background-color: #5f57d4;
+  border-color: #4037be;
+}
+
+.btn-primary-package{
+  color: #22AFF1;
+  background-color: white;
+  
 }
 
 .btn-primary:hover {
@@ -2239,6 +2253,7 @@ fieldset:disabled a.btn {
   background-color: #000211;
   border-color: #000004;
 }
+
 
 .btn-primary:focus, .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 43, 85, 0.5);
@@ -6192,6 +6207,9 @@ a.close.disabled {
 .bg-primary {
   background-color: #000637 !important;
 }
+.bg-sidebar-package{
+  background-color: #22AFF1 !important;
+}
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -9359,6 +9377,10 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
+.text-level {
+  color: #3066CA !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -9598,7 +9620,7 @@ p {
 .font-weight-semibold {
   font-weight: 600;
   padding-bottom: 10px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* body {
@@ -9606,6 +9628,13 @@ p {
   margin: 0px;
   color: #214467;
 } */
+
+.package-body{
+  background-image: url(/images/bg_hero_abipd.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow-x: hidden ;
+}
 
 body.body-top-padding {
   padding-top: 167px;
@@ -9639,6 +9668,12 @@ body.sidebar-open::before {
   background: linear-gradient(176.44deg, rgba(151, 223, 255, 0.22) -21.36%, rgba(200, 238, 255, 0) 79.09%);
   text-align: center;
   padding-bottom: 50px;
+}
+
+.talktosales{
+  background-image: url(/images/bg_talktosales.svg);
+  background-repeat: no-repeat;
+  overflow-x: hidden ;
 }
 
 .content-wrapper {
@@ -9703,7 +9738,6 @@ body.sidebar-open::before {
   .bg-footer{
     background-image: url(/images/bg_footer.png);
     color: #FFFFFF;
-    margin-top: 100px;
   }
 
   .bg-footer .h5{
@@ -9967,11 +10001,26 @@ footer a:hover {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
+.header-small-package.navbar {
+  background: #22AFF1 ;
+  padding: 18px 0px 18px 0px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
 .header-small .navbar.fixed-top {
   top: -50px;
   margin-top: 50px;
   transition: margin-top 1s ease;
 }
+
+.header-small-package .navbar.fixed-top {
+  top: -50px;
+  margin-top: 50px;
+  transition: margin-top 1s ease;
+}
+
 
 @media (min-width: 992px) {
   .header-small .navbar .btn {
@@ -10039,6 +10088,11 @@ footer a:hover {
   background: #EBF9FF;
   padding: 30px 0px 80px 0px;
 }
+
+.navbar-package{
+  background: #22AFF1;
+  padding: 10px 0px 10px 0px;
+} 
 
 .navbar .navbar-toggler {
   line-height: inherit;
@@ -10145,8 +10199,8 @@ footer a:hover {
 }
 
 .btn {
-  font-size: 0.875rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
   padding: 0.625rem 1.25rem;
   outline: none;
 }
@@ -10210,9 +10264,24 @@ footer a:hover {
   border-radius: 10px;
 }
 
+.btn-info-package{
+  transition: all 0.5s ease-in-out;
+  background: transparent;
+  color:  #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
 .btn-info:hover {
   background: #1998ff;
   color: white;
+  border: 2px;
+  border-radius: 10px;
+}
+
+.btn-info-package:hover{
+  background: #ffffff;
+  color: black;
   border: 2px;
   border-radius: 10px;
 }
@@ -10528,6 +10597,7 @@ footer a:hover {
   justify-content: flex-start;
   padding: 5px 0px 20px 39px;
 }
+<<<<<<< HEAD
 .bg1{
   /* Rectangle 93 */
 background: url('../images/bg_left.svg')no-repeat;
@@ -10583,3 +10653,17 @@ padding: 0 30px;
   padding: 0 30px;
 }
 
+=======
+
+.package-header{
+  background-image: url(/images/bubble_left.svg);
+  background-position: left, bottom;
+  background-repeat: no-repeat;
+}
+
+.level-2-background{
+  background-image: url(/images/bubble_left.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+>>>>>>> 216614492e55588df8b914e2ae69e4a16d0b3a75
